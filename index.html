@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varun Edu Labs | Empowering Education</title>
+  <meta name="description" content="Smart ERP, Web, and App Solutions for Schools and Colleges">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #ec4899;
+      --accent: #f59e0b;
+      --light: #f8fafc;
+      --dark: #1e293b;
+      --text: #334155;
+      --gradient-start: #6366f1;
+      --gradient-end: #ec4899;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+    .btn-primary {
+      background: var(--primary);
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease forwards;
+    }
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+    .animate-delay-100 {
+      animation-delay: 0.1s;
+    }
+    .animate-delay-300 {
+      animation-delay: 0.3s;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-lg z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-700">Varun Edu Labs</h1>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-indigo-600 font-medium">Home</a>
+        <a href="#services" class="hover:text-indigo-600 font-medium">Services</a>
+        <a href="#features" class="hover:text-indigo-600 font-medium">Features</a>
+        <a href="#projects" class="hover:text-indigo-600 font-medium">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600 font-medium">Contact</a>
+      </div>
+      <a href="https://wa.me/919014075885" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 text-center bg-gradient-to-r from-purple-50 via-blue-50 to-pink-50 py-16 px-6">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,hsla(252,94%,67%,0.15),transparent)] opacity-50"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-100/30 to-pink-100/30 animate-pulse opacity-30"></div>
+    <h1 class="text-4xl md:text-5xl font-bold text-indigo-700 animate-fade-in [animation-delay:0.1s]">Empowering Education Through Innovation</h1>
+    <p class="mt-4 text-lg text-slate-700 animate-fade-in [animation-delay:0.3s]">We provide comprehensive ERP, web, and mobile app solutions for educational institutions.</p>
+    <a href="#contact" class="mt-6 inline-block btn-primary text-white px-6 py-3 rounded-full shadow">Let's Get Started</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-white relative overflow-hidden">
+    <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-pink-500/10 rounded-full filter blur-3xl"></div>
+    <div class="absolute -top-20 -right-20 w-60 h-60 bg-indigo-500/10 rounded-full filter blur-3xl"></div>
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-800 section-title relative inline-block mb-12">Our Services</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 hover:border-indigo-100 hover:bg-gradient-to-br hover:from-indigo-50/70 hover:via-white hover:to-pink-50/50">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">School ERP Solutions</h3>
+          <p>Comprehensive management of attendance, exams, timetables, student reports, staff modules, fees management, and more.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Web Development</h3>
+          <p>Dynamic and responsive websites tailored for educational institutions, personal portfolios, e-commerce, and business needs.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Mobile App Development</h3>
+          <p>Cross-platform mobile applications for schools, parents, staff, and startups, enhancing accessibility and engagement.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Bulk SMS Integration</h3>
+          <p>Efficient communication through SMS for updates, fee alerts, exam results, and notices directly to parents and teachers.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Cloud Hosting & Deployments</h3>
+          <p>Seamless deployment of your portals on cost-effective cloud services like Vercel, Firebase, and Netlify.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-purple-800 mb-6">Key Features</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white/90 hover:bg-gradient-to-br hover:from-white hover:to-indigo-50 p-6 rounded-xl shadow hover:shadow-md transition-all duration-300 border-l-4 border-indigo-100 hover:border-indigo-400">
+          <h3 class="font-semibold text-lg text-blue-700">Role-Based Access</h3>
+          <p>Secure login modules for Admin, Teacher, Student, and Parent with role-specific permissions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg text-blue-700">Data Privacy</h3>
+          <p>Robust cloud-secure architecture with regular backups and restricted access to ensure data integrity.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg text-blue-700">Easy Report Generation</h3>
+          <p>Instantly generate marksheets, fee receipts, and attendance logs in PDF or Excel formats.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg text-blue-700">Works Offline & Online</h3>
+          <p>Utilize the ERP system without relying on fast internet — available in both local and cloud modes.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg text-blue-700">No Server Required</h3>
+          <p>Our applications can run on basic PCs or be hosted on free platforms like Vercel.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg text-blue-700">Fully Mobile Compatible</h3>
+          <p>Access portals on phones or tablets through web or app with a responsive design for all devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">Get in Touch</h2>
+    <p class="mb-2">📧 Email: <a href="mailto:varuntechworkus04@gmail.com" class="text-blue-700 underline">Email Us ❤️</a></p>
+    <p class="mb-4">📍 Location: Hyderabad, Telangana</p>
+    <a href="https://wa.me/919014075885" class="inline-block bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition">
+      <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm bg-gray-100 text-gray-700">
+    <p>&copy; 2025 Varun Edu Labs. All rights reserved.</p>
+    <p>Follow us on Instagram: <a href="https://instagram.com/Webcreater__2k26" class="text-blue-600 hover:underline" target="_blank">@Webcreater__2k26</a></p>
+  </footer>
+</body>
+</html>
