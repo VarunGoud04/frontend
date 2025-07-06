@@ -218,6 +218,110 @@
       </div>
     </div>
   </section>
+<!-- Pricing Section -->
+<section id="pricing" class="py-16 bg-gradient-to-br from-indigo-50 via-white to-pink-50 text-center">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-indigo-800 mb-6">Pricing Plans</h2>
+
+    <!-- Toggle Switch -->
+    <div class="mb-10 flex justify-center items-center gap-4">
+      <span class="text-sm font-medium text-gray-700">One-Time</span>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" id="billingToggle" class="sr-only peer">
+        <div class="w-14 h-7 bg-gray-300 rounded-full peer peer-checked:bg-indigo-500 transition duration-300 ease-in-out"></div>
+        <div class="absolute left-1 top-0.5 bg-white w-6 h-6 rounded-full shadow-md transition-transform duration-300 ease-in-out peer-checked:translate-x-7"></div>
+      </label>
+      <span class="text-sm font-medium text-gray-700">6 Months</span>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="grid gap-8 md:grid-cols-3 text-left transition-opacity duration-500 ease-in-out" id="pricingCards">
+
+      <!-- BASIC PLAN -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Basic</h3>
+        <p class="text-lg text-gray-600 toggle-text" data-one="₹8499 (One-Time)" data-six="₹1849 (6 Months)">₹8499 (One-Time)</p>
+        <ul class="text-sm text-left my-4 space-y-2">
+          <li>✅ Student Result Portal</li>
+          <li>✅ Basic School Website</li>
+          <li>✅ Single Result Upload</li>
+          <li>✅ Mobile Responsive</li>
+          <li>✅ 6-Month Support</li>
+        </ul>
+        <div class="flex justify-center">
+          <a href="https://forms.gle/KGZGhP9WKuDt4Y5N9"
+             class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 toggle-link"
+             data-one="https://forms.gle/KGZGhP9WKuDt4Y5N9"
+             data-six="https://payments.cashfree.com/forms?code=6-cidab"
+             target="_blank">💸 Pay Now</a>
+        </div>
+        <a href="https://wa.me/919014075885?text=I'm%20interested%20in%20Basic%20Plan"
+           class="text-green-600 mt-4 inline-block hover:underline">💬 I'm interested</a>
+      </div>
+
+      <!-- STANDARD PLAN -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Standard</h3>
+        <p class="text-lg text-gray-600 toggle-text" data-one="₹13499 (One-Time)" data-six="₹2699 (6 Months)">₹13499 (One-Time)</p>
+        <ul class="text-sm text-left my-4 space-y-2">
+          <li>✅ All Basic Plan Features</li>
+          <li>✅ Admin Upload System</li>
+          <li>✅ Class-wise Results</li>
+          <li>✅ SMS Integration Ready</li>
+          <li>✅ Design Customizations</li>
+        </ul>
+        <div class="flex justify-center">
+          <a href="https://forms.gle/KGZGhP9WKuDt4Y5N9"
+             class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 toggle-link"
+             data-one="https://forms.gle/KGZGhP9WKuDt4Y5N9"
+             data-six="https://payments.cashfree.com/forms?code=standard6months"
+             target="_blank">💸 Pay Now</a>
+        </div>
+        <a href="https://wa.me/919014075885?text=I'm%20interested%20in%20Standard%20Plan"
+           class="text-green-600 mt-4 inline-block hover:underline">💬 I'm interested</a>
+      </div>
+
+      <!-- PREMIUM PLAN -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Premium</h3>
+        <p class="text-lg text-gray-600 toggle-text" data-one="₹17499 (One-Time)" data-six="₹3499 (6 Months)">₹17499 (One-Time)</p>
+        <ul class="text-sm text-left my-4 space-y-2">
+          <li>✅ All Standard Plan Features</li>
+          <li>✅ Progress Cards (FA1–4, SA1–2)</li>
+          <li>✅ Full ERP Modules</li>
+          <li>✅ Bulk SMS Setup</li>
+          <li>✅ Priority Support</li>
+        </ul>
+        <div class="flex justify-center">
+          <a href="https://forms.gle/KGZGhP9WKuDt4Y5N9"
+             class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 toggle-link"
+             data-one="https://forms.gle/KGZGhP9WKuDt4Y5N9"
+             data-six="https://payments.cashfree.com/forms?code=premium6monthspremium6months"
+             target="_blank">💸 Pay Now</a>
+        </div>
+        <a href="https://wa.me/919014075885?text=I'm%20interested%20in%20Premium%20Plan"
+           class="text-green-600 mt-4 inline-block hover:underline">💬 I'm interested</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Toggle Script -->
+<script>
+  const toggle = document.getElementById("billingToggle");
+  const prices = document.querySelectorAll(".toggle-text");
+  const links = document.querySelectorAll(".toggle-link");
+
+  toggle.addEventListener("change", () => {
+    prices.forEach(el => {
+      el.textContent = toggle.checked ? el.dataset.six : el.dataset.one;
+    });
+    links.forEach(link => {
+      link.href = toggle.checked ? link.dataset.six : link.dataset.one;
+    });
+  });
+</script>
 
   <!-- Contact Section -->
   <section id="contact" class="py-16 bg-white text-center">
