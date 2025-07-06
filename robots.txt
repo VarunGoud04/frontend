@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://varunedulabs.vercel.app/sitemap.xml
